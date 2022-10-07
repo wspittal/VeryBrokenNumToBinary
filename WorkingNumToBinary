@@ -1,0 +1,15 @@
+import math
+while True:
+    x = (int(input("Number to binaryize: ")))
+    pl = []
+    while x != 0:
+      y = x % 2
+      x = math.floor(x / 2)
+      pl.append(y)
+    output = ""
+    for i in pl:
+      output = str(i) + output
+    print(output)
+    if (input("continue y/n")).lower() == "n":
+      print("Byeeeeeee")
+      break
